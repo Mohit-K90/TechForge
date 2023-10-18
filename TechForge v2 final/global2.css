@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-jomhuria: Jomhuria;
+  --font-k2d: K2D;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #2c2727;
+
+  /* Border radiuses */
+  --br-mini: 15px;
+  --br-9xl: 28px;
+}

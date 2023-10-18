@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>
+    .navbar {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: sans-serif;
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    select {
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #000000;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+  <title>
+    My PC Part Picker
+  </title>
+  <link rel="stylesheet" href="./website edition 5_files/style.css">
+  <link rel="icon" title="TechForge" href="logo.png">
+</head>
+<body>
+<nav class="navbar">
+  <a href="home.html" style="float: right;">Home</a>
+  <a href="PREbuiltPAGE.html" style="float: right;">Pre Builts</a>
+  <a href="file:///C:/Users/binal/OneDrive/Desktop/New%20folder/New%20folder%20(2)/cpus.html" style="float: right;">CPUs</a>
+  <a href="file:///C:/Users/binal/OneDrive/Desktop/New%20folder/New%20folder%20(2)/motherboards.html" style="float: right;">Motherboards</a>
+  <a href="file:///C:/Users/binal/OneDrive/Desktop/New%20folder/New%20folder%20(2)/memory.html" style="float: right;">Memory</a>
+  <a href="file:///C:/Users/binal/OneDrive/Desktop/New%20folder/New%20folder%20(2)/storage.html" style="float: right;">Storage</a>
+  <a href="file:///C:/Users/binal/OneDrive/Desktop/New%20folder/New%20folder%20(2)/video-cards.html" style="float: right;">Video Cards</a>
+  <a href="file:///C:/Users/binal/OneDrive/Desktop/New%20folder/New%20folder%20(2)/power-supplies.html" style="float: right;">Power Supplies</a>
+</nav>
+  <header>
+    <img src="./website edition 5_files/logo.png" alt="Logo" style="float: left;">
+    <h1>TECHFORGE</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Cases</h2>
+      <select id="case" onchange="selectComponent(this.id, this.value)">
+        <option value="">Select a case</option>
+        <option value="Lian Li O11 Dynamic Mini">Lian Li O11 Dynamic Mini</option>
+        <option value="Corsair 4000D Airflow">Corsair 4000D Airflow</option>
+        <option value="Fractal Design Meshify 2 Compact">Fractal Design Meshify 2 Compact</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>CPUs</h2>
+      <select id="cpu" onchange="selectComponent(this.id, this.value)">
+        <option value="">Select a CPU</option>
+        <option value="Intel Core i5-13600K">Intel Core i5-13600K</option>
+        <option value="AMD Ryzen 5 7600X">AMD Ryzen 5 7600X</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Motherboards</h2>
+      <select id="motherboard" onchange="selectComponent(this.id, this.value)">
+        <option value="">Select a motherboard</option>
+        <option value="ASUS ROG Strix B660-A Gaming WiFi D4">ASUS ROG Strix B660-A Gaming WiFi D4</option>
+        <option value="MSI B650 Tomahawk MAX WiFi">MSI B650 Tomahawk MAX WiFi</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Memory</h2>
+      <select id="memory" onchange="selectComponent(this.id, this.value)">
+        <option value="">Select memory</option>
+        <option value="Corsair Vengeance LPX 16GB (2x8GB) DDR4-3600">Corsair Vengeance LPX 16GB (2x8GB) DDR4-3600</option>
+        <option value="G.Skill Trident Z Neo 32GB (2x16GB) DDR4-3200">G.Skill Trident Z Neo 32GB (2x16GB) DDR4-3200</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Storage</h2>
+      <select id="storage" onchange="selectComponent(this.id, this.value)">
+        <option value="">Select storage</option>
+        <option value="Samsung 970 EVO Plus 500GB NVMe M.2 SSD">Samsung 970 EVO Plus 500GB NVMe M.2 SSD</option>
+        <option value="Western Digital Blue SN570 1TB NVMe M.2 SSD">Western Digital Blue SN570 1TB NVMe M.2 SSD</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Video Cards</h2>
+      <select id="videoCard" onchange="selectComponent(this.id, this.value)">
+        <option value="">Select a video card</option>
+        <option value="NVIDIA GeForce RTX 3060 Ti">NVIDIA GeForce RTX 3060 Ti</option>
+        <option value="AMD Radeon RX 6600 XT">AMD Radeon RX 6600 XT</option>
+      </select>
+    </section>
+    <section>
+      <h2>Power Supplies</h2>
+      <select id="powerSupply" onchange="selectComponent(this.id, this.value)">
+        <option value="">Select a power supply</option>
+        <option value="Corsair RMx 650W 80+ Gold Fully Modular">Corsair RMx 650W 80+ Gold Fully Modular</option>
+        <option value="Seasonic Focus GX-650W 80+ Gold Fully Modular">Seasonic Focus GX-650W 80+ Gold Fully Modular</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Selected Parts</h2>
+      <ul id="selectedPartsList">
+      </ul>
+    </section>
+
+    <section>
+      <h2>Total Cost</h2>
+      <input type="text" id="totalCostTextBox" readonly>
+    </section>
+  </main>
+
+  <aside>
+  </aside>
+
+  <footer>
+    <p>Copyright TECHFORGE</p>
+  </footer>
+
+  <script src="main2.js"></script>
+  <script>
+    function selectComponent(componentType, componentValue) {
+      // Add the selected component to the selectedPartsList list.
+      const selectedPartsList = document.getElementById('selectedPartsList');
+      selectedPartsList.innerHTML += `<li>${componentType}: ${componentValue}</li>`;
+      
+      // Calculate and update the total cost (You need to define this in your main2.js file).
+      calculateTotalCost();
+    }
+  </script>
+</body>
+</html>
+

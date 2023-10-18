@@ -1,0 +1,69 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #0c0c0c; /* Dark background color */
+  color: #ffffff; /* White text color */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #000000; 
+  padding: 20px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #111111; /* Slightly lighter background color */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the main content */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow for the main content */
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark gray section background color */
+  border-radius: 5px; /* Rounded corners for sections */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Box shadow for sections */
+}
+
+h2 {
+  font-size: 24px; /* Slightly larger font size */
+  margin-bottom: 10px;
+  color: #ffcc00; /* Yellowish text color for headings */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #cccccc; /* Light gray text color for list items */
+}
+
+footer {
+  text-align: center;
+  background-color: #1e1e1e; /* Dark gray footer background color */
+  padding: 10px;
+  color: #cccccc; /* Light gray text color for footer */
+}
+
+/* Style buttons with a techy appearance */
+button {
+  background-color: #007acc; /* Blue button background color */
+  color: #ffffff; /* White text color for buttons */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style buttons on hover */
+button:hover {
+  background-color: #005faa; /* Darker blue on hover */
+}

@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-nixie-one: "Nixie One";
+  --font-oxanium: Oxanium;
+  --font-inter: Inter;
+  --font-jockey-one: "Jockey One";
+
+  /* font sizes */
+  --font-size-17xl: 36px;
+  --font-size-29xl: 48px;
+  --font-size-109xl: 128px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #907777;
+  --color-khaki: #eaf473;
+  --color-rosybrown: #b28181;
+  --color-snow: #fffcfc;
+  --color-darkslategray: #3d3838;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+}
+

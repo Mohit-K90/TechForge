@@ -1,0 +1,63 @@
+// Create a set to store the selected components of each type.
+const selectedComponents = new Map();
+
+// Create an object to store the prices of the components.
+const componentPrices = {
+  "Case": {
+    "Lian Li O11 Dynamic Mini": 100,
+    "Corsair 4000D Airflow": 80,
+    "Fractal Design Meshify 2 Compact": 70
+  },
+  "CPU": {
+    "Intel Core i5-13600K": 300,
+    "AMD Ryzen 5 7600X": 250
+  },
+  "Motherboard": {
+    "ASUS ROG Strix B660-A Gaming WiFi D4": 200,
+    "MSI B650 Tomahawk MAX WiFi": 150
+  },
+  "Memory": {
+    "Corsair Vengeance LPX 16GB (2x8GB) DDR4-3600": 100,
+    "G.Skill Trident Z Neo 32GB (2x16GB) DDR4-3200": 150
+  },
+  "Storage": {
+    "Samsung 970 EVO Plus 500GB NVMe M.2 SSD": 50,
+    "Western Digital Blue SN570 1TB NVMe M.2 SSD": 75
+  },
+  "Video Card": {
+    "NVIDIA GeForce RTX 3060 Ti": 400,
+    "AMD Radeon RX 6600 XT": 350
+  },
+  "Power Supply": {
+    "Corsair RMx 650W 80+ Gold Fully Modular": 100,
+    "Seasonic Focus GX-650W 80+ Gold Fully Modular": 125
+  }
+};
+
+// Add a function to select a component.
+function selectComponent(componentType, componentName) {
+  // Get the set of selected components for the given component type.
+  const selectedComponentsForType = selectedComponents.get(componentType);
+
+  // If there is already a component of the given type selected, do not add the new component.
+  if (selectedComponentsForType && selectedComponentsForType.has(componentName)) {
+    return;
+  }
+
+  // Add the new component to the set of selected components for the given component type.
+  if (!selectedComponentsForType) {
+    selectedComponents.set(componentType, new Set());
+  }
+  selectedComponentsForType.add(componentName);
+
+  // Calculate the total cost of the selected components.
+  let totalCost = 0;
+  for (const [componentType, selectedComponentsForType] of selectedComponents) {
+    for (const componentName of selectedComponentsForType) {
+      totalCost += componentPrices[componentType][componentName];
+    }
+  }
+
+  // Display the total cost in the text box.
+  totalCostTextBox.value = totalCost;
+}
