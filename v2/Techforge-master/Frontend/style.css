@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300&family=Josefin+Slab:wght@400;700&family=Rajdhani:wght@300;400;600&family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body{
+  background-image: none;
+  position: relative;
+  background-size: cover;
+
+}
+
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: rgb(97, 97, 97);
+  margin-bottom: 20px; /* Add margin at the bottom to create space */
+}
+
+h2 {
+  font-size: 100px;
+  font-family: 'Teko';
+  line-height: 54px;
+  color: rgb(251, 219, 255);
+  margin-bottom: 10px; /* Add margin at the bottom to create space */
+  margin-left: -1px;
+  
+}
+
+
+
+h4 {
+  font-size: 20px;
+  color:rgb(239, 200, 244);
+  margin-bottom: 15px; /* Add margin at the bottom to create space */
+}
+
+h5 {
+  font-family: 'Teko';
+  font-size: 15px;
+  color: rgb(231, 228, 228);
+  
+}
+
+h6 {
+  font-family: 'Teko';
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  
+}
+
+p {
+ color: aliceblue;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+img {
+    width: 80px;
+  height: 10;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: black;
+  }
+  
+/* navbar */
+  a {
+
+    align-items: first baseline;
+    justify-content: space-between;
+    font-size: 25px; 
+    font-family: 'Padyakke', serif;
+    font-weight: 300;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    top: -10px;
+  } 
+  li a {
+    font-family: 'Teko', sans-serif;
+  }
+ 
+  
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  0px 50px;
+  
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color:  rgb(164, 141, 237);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgb(178, 194, 237);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* HERo section */
+#hero2{
+  background-image: url("Images/2023-03-16-image.jpg");
+  background-size: cover;
+  height: 80vh;
+  width: 60%;
+  background-position: top 25% right 0%;
+}
+#hero{
+  margin-top: 10%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.btn1 {
+  position: relative; /* or absolute */
+  top: 20px; /* Adjust the value to move it down */
+  left: 10px;
+  font-family: 'Teko';
+  font-size: 1.2em;
+  font-weight: bolder;
+  background-color:rgb(177, 200, 221);
+  border: none;
+  color: white;
+  border-radius: 5px;
+
+  padding: 8px 16px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: inset 0 0 0 0 rgb(155, 199, 240);
+  transition: ease-out 0.7s; /* Increase the transition duration to make it slower */
+}
+
+.btn1:hover {
+  box-shadow: inset 300px 0 0 0 rgb(177, 200, 221);
+  color: black; /* Change text color to black on hover */
+}
+
+
+.cont
+{
+  margin-top:222px;
+  margin-left: 18px;
+  font-size: medium;
+  text-decoration: underline;
+}
+body.product{
+  
+  background-color: rgb(77, 64, 49);
+}
+
+#pageheader{
+  
+    background-image: url(Images/2qe.png);
+    background-color: rgb(34, 29, 29);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    background-size: cover;
+    padding: 20px;
+
+}
+
+
+
+.btn a {
+  margin-top: 150px;
+  margin-right: 888px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Teko';
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: rgb(36, 35, 35);
+  color: white;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  outline: none;
+}
+
+.btn a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+#product1{
+  text-align: left;
+  
+}
+#product1 .pro {
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+  height: 48vh;
+  width: 260px;
+  min-width: 40px;
+  border: 2px solid rgb(85, 68, 68);
+  background-color: #000000;
+  border-radius: 1px;
+  transition: 1s ease;
+  margin-bottom: 0px; /* Adjust this value as needed for the desired space at the bottom */
+}
+
+
+#product1 .pro:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+#product1 .pro img {
+  margin-top: 1px;
+  margin-left: 22px;
+  width: 80%; 
+  height: 25vh; 
+  border: px solid rgb(66, 66, 66); 
+  border-radius: 10px;
+
+} 
+#product1 .pro .des h5
+{
+  margin-left: 20px; 
+  margin-top: -20px; 
+
+  font-family: 'Teko';
+  font-size: xx-large;
+}h3
+{
+  color: rgb(255, 255, 255);
+  font-family: 'Teko', Times, serif;
+  font-size: 50px;
+  font-weight: 100;
+  padding-bottom: 25px; /* Adjust the value to add space below */
+  padding-top: 20px;
+  margin-top: -10px;
+}
+
+
+#product1 .pro .des h6{
+  font-size: medium;
+  margin-left: 20px;
+  margin-top: -1px;
+  padding-top: -1px;
+ color: rgb(213, 241, 241);
+}
+
+
+#product1 .pro .des p{
+  font-size: x-large;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  color: rgb(51, 174, 51);
+}
+
+#product1 .pro .cart{
+  
+  width: 20px;
+  height: 20px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  color: rgb(70, 70, 70);
+ 
+
+}
+#product1 .pro .plus{
+  
+  width: 20px;
+  height: 20px;
+  line-height: 0px;
+  position: absolute;
+  bottom: 30px;
+  right: 80px;
+  color: rgb(149, 152, 149);
+  border: 1px solid  gray;
+  border-radius: 50px;
+
+}
+#product1 .procontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding-top:-20px;
+ 
+}
+#product1 .pro{
+  display: flex;
+  flex-wrap: wrap;  
+
+}
+

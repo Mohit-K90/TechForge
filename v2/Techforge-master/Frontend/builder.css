@@ -1,0 +1,338 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300&family=Josefin+Slab:wght@400;700&family=Rajdhani:wght@300;400;600&family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: none;
+  position: relative;
+  background-size: cover;
+
+}
+
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: rgb(97, 97, 97);
+  margin-bottom: 20px; /* Add margin at the bottom to create space */
+}
+
+h2 {
+  font-size: 100px;
+  font-family: 'Teko';
+  line-height: 54px;
+  color: rgb(251, 219, 255);
+  margin-bottom: 10px; /* Add margin at the bottom to create space */
+  margin-left: -1px;
+  
+}
+
+h5 {
+  font-size: 15px;
+  color: rgb(231, 228, 228);
+  
+}
+
+h6 {
+  font-family: 'Teko';
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  
+}
+
+p {
+ color: aliceblue;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+img {
+    width: 80px;
+  height: 10;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: black;
+  }
+  
+/* navbar */
+  a {
+
+    align-items: first baseline;
+    justify-content: space-between;
+    font-size: 25px; 
+    font-family: 'Padyakke', serif;
+    font-weight: 300;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    top: -10px;
+  } 
+  li a {
+    font-family: 'Teko', sans-serif;
+  }
+ 
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  0px 50px;
+  
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color:  rgb(164, 141, 237);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgb(178, 194, 237);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+/* PAGE HEADER SECTION */
+
+
+#pageheader{
+  
+    background-image: url();
+    background-color: rgb(28, 28, 29);
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    background-size: cover;
+    margin-bottom: 30px;
+
+}
+h4 {
+    font-size: 30px;
+    color:rgb(189, 186, 186);
+    margin-bottom: 5px;
+    font-family: "Josefin Slab";
+  }
+
+
+/* BUILDER SECTION */
+#parts {
+  
+  margin-top: 20px;
+  margin-left: 100px;
+  text-align: left;
+  display: flex;
+  justify-content: left; 
+  background-color:rgb(28, 28, 29);
+  height: 7vh;
+  width: 85%;
+  padding-top: 20px;
+  border-radius: 5px;
+   margin-bottom: -5px;
+}
+#parts .cpu h5{
+  color: rgb(252, 251, 254);
+  margin-left: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: x-large;
+  font-weight: 10;
+  margin-top: -10px;
+}
+#parts .tut .btn1{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 280px;
+  margin-top: -30px;
+  text-align: right;
+
+}
+.fa-plus {
+  position: relative;
+  top: 5.5px;
+  left: 3.5px;
+  font-size: 12px;
+}
+
+#parts .btn1 {
+  background-color: rgb(139, 130, 130);
+  font-family: 'Teko';
+  font-size: large;
+  font-weight: 10;
+  position: relative;
+  height: 4vh;
+  padding: 10px; 
+  text-align: center;
+  margin: 1px 20px;
+  border: 2px;
+  border-radius: 5px;
+  padding-top: 3px;
+  background-color: #444150;
+  color: white;
+  transition: color 0.1s ease;
+}
+
+#parts .btn1:hover {
+  background-color: rgb(164, 141, 237);
+  color: rgb(21, 19, 19); /* Change the text color on hover */
+}
+
+#main{
+     display: flex;
+     flex-direction: column;
+}
+
+/* TABLE SECTION */
+.product-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.product-table th, .product-table td {
+  font-family: 'Rajdhani';
+  font-size: medium;
+  border-bottom: 1px solid #0a0909;
+  padding: 4px;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: rgb(128, 128, 143);
+  padding: 8px;
+}
+.product-table td {
+  font-family: 'Teko';
+  font-size: large;
+  background-color:  rgb(221, 222, 228); 
+}
+.product-table input[type="checkbox"] {
+  margin-top: 10px; 
+  width: 15px;
+  height: 15px;
+}
+.product-table td:last-child {
+  border-right: none;
+}
+
+.product-table tr:last-child td {
+  border-bottom: none; 
+}
+
+
+.product-table td:nth-child(2) {
+  width: 200px; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+
+.product-table td:nth-child(5) {
+  width: 200px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.product-table td:nth-child(1) {
+  width: 150px; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+.product-table td:nth-child(8) {
+  width: 200px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.product-table td:nth-child(4) {
+  width: 150px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.product-table td:nth-child(7) {
+  width: 150px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.product-table td:nth-child(1) {
+  width: 100px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+
+.product-table td img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px; 
+  height: 50px; 
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+.product-table td:hover img {
+  transform: scale(2); 
+}
+.but1{
+  text-align: center;
+  font-family: 'Teko';
+  font-size: medium;
+  width: 50%;
+  height: 4vh;
+  border: 8px;
+  border-radius:5px;
+  background-color: rgb(164, 141, 237);
+  color: rgb(5, 5, 5);
+  transition: color 0.1s ease;
+}
+.but1:hover {
+  background-color: rgb(13, 13, 14);
+  color: rgb(255, 230, 230);
+}

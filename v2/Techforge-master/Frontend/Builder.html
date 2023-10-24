@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prebuilds</title>
+    <link rel="stylesheet" href="builder.css">
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Josefin+Slab:wght@400;700&family=Padyakke+Expanded+One&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <h2><a href="Index.html">TECH-FORGE</a></h2>
+        <div>
+            <ul id="navbar">
+                <li><a href="Index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="Prebuilds.html"><i class="fa-solid fa-wrench"></i> Prebuilds</a></li>
+                <li><a class="active" href="Builder.html"><i class="fas fa-screwdriver-wrench"></i> Builder</a></li>
+                <li><a href="Guides.html"><i class="fa-solid fa-file"></i> Guides</a></li>
+                <li><a href="Cart.html"><i class="fa-solid fa-user-astronaut"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="pageheader">
+        <h4>CHOOSE YOUR PARTS</h4>
+    </section>
+
+    <section id="main">
+        <section id="parts">
+            <div class="cpu">
+                <h5>CPU<span id="displayData" style="display: inline;"></h5>
+                <div class="tut">
+                    <button class="btn1" onclick="location.href='cpu.html'">Choose A CPU<i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parts">
+            <div class="cpu">
+                <h5>Graphics Card</h5>
+                <div class="tut">
+                    <button class="btn1" onclick="location.href='Gpu.html'">Choose A Graphic Card<i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parts">
+            <div class="cpu">
+                <h5>Motherboard</h5>
+                <div class="tut">
+                    <button class="btn1" onclick="location.href='motherboard.html'">Choose A Motherboard <i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parts">
+            <div class="cpu">
+                <h5>Power Supply</h5>
+                <div class="tut">
+                    <button class="btn1" onclick="location.href='pwrsup.html'">Choose A Powersupply<i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parts">
+          <div class="cpu">
+              <h5>Cabinet <span id="displayData" style="display: inline;"></span></h5>
+              <div class="tut">
+                  <button class="btn1" id="cabinetButton" onclick="location.href='cabinet.html'">Choose A Cabinet<i class="fa-solid fa-plus"></i></button>
+              </div>
+          </div>
+      </section>
+  </section>
+
+        <section id="parts">
+            <div class="cpu">
+                <h5>Monitor</h5>
+                <div class="tut">
+                    <button class="btn1" onclick="location.href='monito.html'">Choose A Monitor<i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parts">
+            <div class="cpu">
+                <h5>Memory</h5>
+                <div class="tut">
+                    <button class="btn1" onclick="location.href='memory.html'">Choose A Memory<i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parts">
+            <div class="cpu">
+                <h5>Operating system</h5>
+                <div class="tut">
+                    <button class="btn1" onclick="location.href='os.html'">Choose An Operating System<i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        // Check if there is data in localStorage
+        const storedData = localStorage.getItem('selectedData');
+        const button = document.querySelector('.btn1');
+    
+        if (storedData) {
+            document.getElementById('displayData').innerHTML = `&nbsp:&nbsp&nbsp Selected Part: ${storedData}`;
+            button.style.display = 'none'; // Hide the button
+        } else {
+            document.getElementById('displayData').style.display = 'none'; // Hide the text if there's no selected data.
+        }
+        
+        // Clear the data from localStorage after displaying it
+        localStorage.removeItem('selectedData');
+    </script>
+    
+    
+</body>
+</html>

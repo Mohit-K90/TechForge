@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prebuilds</title>
+  <link rel="stylesheet" href="builder.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Josefin+Slab:wght@400;700&family=Padyakke+Expanded+One&family=Teko:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <section id="header">
+    <h2><a href="Index.html">TECH-FORGE</a></h2>
+    <div>
+      <ul id="navbar">
+        <li><a href="Index.html"><i><i class="fa-solid fa-house-chimney"></i></i> Home</a></li>
+        <li><a href="Prebuilds.html"><i><i class="fa-solid fa-wrench"></i> </i> Prebuilds</a></li>
+        <li><a class="active" href="Builder.html"><i><i class="fas fa-screwdriver-wrench"></i></i> Builder</a></li>
+        <li><a href="Guides.html"><i><i class="fa-solid fa-file"></i></i> Guides</a></li>
+
+        <li><a href="Cart.html"><i><i class="fa-solid fa-user-astronaut"></i></i> </a></li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section id="pageheader">
+    <h4>CHOOSE A CPU</h4>
+  </section>
+ 
+  <table class="product-table">
+    <tr>
+      <th>OPT</th>
+      <th>PRODUCT</th>
+      <th>NAME</th>
+      <th>CORE</th>
+      <th>INTEGRATED GRAPHICS</th>
+      <th>TDP</th>
+      <th>PRICING</th>
+      <th>SELECT</th>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><img src="Images/b1.jpg" alt="Laptop Image"></td>
+      <td>Example Laptop</td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>65W</td>
+      <td>$799.99</td>
+      <td><button class="but1" type="button"  onclick="passData('Cpu 1')">Add+</button></td>
+<!-- Corrected this line: onclick="passData('Cpu 1')" -->
+
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><img src="Images/b1.jpg" alt="Laptop Image"></td>
+      <td>Example Laptop</td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>65W</td>
+      <td>$799.99</td>
+      <td><button class="but1" type="button"  onclick="passData('Cpu2')">Add+</button></td>
+      <!-- Corrected this line: onclick="passData('Cpu2')" -->
+    </tr>  
+  </table>
+  <script>
+    function passData(selectedData) {
+        // Store the selected data in localStorage
+        localStorage.setItem('selectedData', selectedData);
+        
+        // Redirect to Page 1
+        location.href = 'Builder.html';
+    }
+
+</script>
+
+</body>
+
+</html>
